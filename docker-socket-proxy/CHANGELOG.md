@@ -1,6 +1,6 @@
 # Changelog
 
-## 2026.11.21
+## 1.0.0
 
 - ✨ First release: the Docker API, read-only, over TCP on port 5594.
 - ✅ Works with [Monitor Docker](https://github.com/ualex73/monitor_docker).

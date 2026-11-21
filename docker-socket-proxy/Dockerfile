@@ -14,8 +14,4 @@ LABEL io.hass.version="${BUILD_VERSION}" \
     io.hass.type="addon" \
     org.opencontainers.image.source="https://github.com/seb5594/Home-Assistant-Docker-Socket-Proxy-App"
 
-COPY entrypoint.sh /
-RUN chmod a+x /entrypoint.sh
-
-ENTRYPOINT [ "/bin/bash", "/entrypoint.sh" ]
-CMD [ "/usr/local/bin/docker-socket-proxy" ]
+ENTRYPOINT [ "/usr/local/bin/docker-socket-proxy" ]

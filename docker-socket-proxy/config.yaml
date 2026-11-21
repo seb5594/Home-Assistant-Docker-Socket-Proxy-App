@@ -1,5 +1,5 @@
 name: Docker Socket Proxy
-version: 2026.11.21
+version: 1.0.0
 slug: docker-socket-proxy
 description: Read-only Docker API over TCP for Monitor Docker and other dashboards.
 url: https://github.com/seb5594/Home-Assistant-Docker-Socket-Proxy-App

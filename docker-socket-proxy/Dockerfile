@@ -4,6 +4,8 @@ ARG BUILD_VERSION=1.0.0
 FROM ${BUILD_FROM}
 
 COPY proxy.c /usr/src/proxy.c
+# The compiler is removed again in the same step, so it never reaches the image.
+# hadolint ignore=DL3018
 RUN apk add --no-cache --virtual .build-deps gcc musl-dev \
     && gcc -Os -Wall -Wextra -static -s -o /usr/local/bin/docker-socket-proxy /usr/src/proxy.c \
     && apk del .build-deps \

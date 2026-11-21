@@ -9,8 +9,13 @@ RUN apk add --no-cache --virtual .build-deps gcc musl-dev \
     && apk del .build-deps \
     && rm -f /usr/src/proxy.c
 
+ARG BUILD_VERSION
 LABEL io.hass.version="${BUILD_VERSION}" \
     io.hass.type="addon" \
     org.opencontainers.image.source="https://github.com/seb5594/Home-Assistant-Docker-Socket-Proxy-App"
 
-ENTRYPOINT [ "/usr/local/bin/docker-socket-proxy" ]
+COPY entrypoint.sh /
+RUN chmod a+x /entrypoint.sh
+
+ENTRYPOINT [ "/bin/bash", "/entrypoint.sh" ]
+CMD [ "/usr/local/bin/docker-socket-proxy" ]

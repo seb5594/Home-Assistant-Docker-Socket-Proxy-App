@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 128" width="512" height="128">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#2496ed"/><stop offset="1" stop-color="#0b4f93"/>
+    </linearGradient>
+  </defs>
+  <rect width="512" height="128" fill="url(#bg)"/>
+  <g transform="translate(14 8) scale(.47)">
+  <!-- tail -->
+  <path d="M58 168 C40 176 22 168 14 146 C30 150 40 142 40 124 C46 140 60 148 76 142 Z" fill="#ffffff"/>
+  <!-- body -->
+  <path d="M232 148 C232 190 194 214 142 214 C98 214 66 196 52 166 C60 120 100 106 142 106 C196 106 232 118 232 148 Z" fill="#ffffff"/>
+  <!-- belly shade -->
+  <clipPath id="bodyClip"><path d="M232 148 C232 190 194 214 142 214 C98 214 66 196 52 166 C60 120 100 106 142 106 C196 106 232 118 232 148 Z"/></clipPath>
+  <path clip-path="url(#bodyClip)" d="M30 168 C80 190 150 182 240 160 L240 230 L30 230 Z" fill="#cfe7fb"/>
+  <!-- containers -->
+  <g stroke="#0b3d6e" stroke-width="3" stroke-linejoin="round">
+    <rect x="96"  y="82" width="26" height="22" rx="4" fill="#ffd166"/>
+    <rect x="124" y="82" width="26" height="22" rx="4" fill="#ff7a59"/>
+    <rect x="152" y="82" width="26" height="22" rx="4" fill="#4cc9a7"/>
+    <rect x="180" y="84" width="26" height="22" rx="4" fill="#ffd166"/>
+    <rect x="124" y="58" width="26" height="22" rx="4" fill="#4cc9a7"/>
+    <rect x="152" y="58" width="26" height="22" rx="4" fill="#ffd166"/>
+    <rect x="152" y="34" width="26" height="22" rx="4" fill="#ff7a59"/>
+  </g>
+  <!-- container doors -->
+  <g stroke="#0b3d6e" stroke-width="2" stroke-linecap="round" opacity=".55">
+    <path d="M109 87v12M137 87v12M165 87v12M193 89v12M137 63v12M165 63v12M165 39v12"/>
+  </g>
+  <!-- face -->
+  <circle cx="200" cy="140" r="11" fill="#0b3d6e"/>
+  <circle cx="203" cy="136" r="4" fill="#ffffff"/>
+  <path d="M206 168 Q219 176 229 164" fill="none" stroke="#0b3d6e" stroke-width="4" stroke-linecap="round"/>
+  <ellipse cx="190" cy="160" rx="7" ry="4.5" fill="#ff9fb2" opacity=".85"/>
+  <!-- socket on the belly -->
+  <rect x="96" y="150" width="46" height="46" rx="12" fill="#0b3d6e"/>
+  <rect x="96" y="150" width="46" height="46" rx="12" fill="none" stroke="#7cc4ff" stroke-width="3"/>
+  <circle cx="119" cy="173" r="16" fill="#164f8c" stroke="#7cc4ff" stroke-width="2"/>
+  <circle cx="112" cy="173" r="3.6" fill="#ffd166"/>
+  <circle cx="126" cy="173" r="3.6" fill="#ffd166"/>
+  <rect x="116" y="154.5" width="6" height="4.5" rx="1.5" fill="#ffd166"/>
+  <rect x="116" y="187" width="6" height="4.5" rx="1.5" fill="#ffd166"/>
+</g>
+  <g font-family="Inter, 'DejaVu Sans', sans-serif" fill="#ffffff">
+    <text x="148" y="66" font-size="38" font-weight="800" letter-spacing="-.5">Docker Socket</text>
+    <text x="148" y="104" font-size="38" font-weight="800" letter-spacing="-.5">Proxy</text>
+    <text x="262" y="102" font-size="15" font-weight="600" opacity=".85" letter-spacing="1.2">READ-ONLY · TCP 5594</text>
+  </g>
+</svg>

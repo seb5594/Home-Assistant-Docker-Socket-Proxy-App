@@ -1,0 +1,19 @@
+name: Docker Socket Proxy
+version: 2026.11.21
+slug: docker-socket-proxy
+description: Read-only Docker API over TCP for Monitor Docker and other dashboards.
+url: https://github.com/seb5594/Home-Assistant-Docker-Socket-Proxy-App
+arch:
+  - aarch64
+  - amd64
+  - armv7
+  - armhf
+  - i386
+startup: services
+boot: auto
+init: true
+# Mounts the Docker socket; the Supervisor only does this while Protection mode is off.
+docker_api: true
+watchdog: http://[HOST]:[PORT:5594]/healthz
+ports:
+  5594/tcp: null

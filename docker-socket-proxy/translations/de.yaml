@@ -1,0 +1,2 @@
+network:
+  5594/tcp: "Docker-API, nur lesend. Für Monitor Docker in Home Assistant nicht nötig. Nur setzen (zum Beispiel 1337), wenn andere Geräte darauf zugreifen sollen."

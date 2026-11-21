@@ -1,0 +1,2 @@
+network:
+  5594/tcp: "Docker API, read-only. Not needed for Monitor Docker in Home Assistant. Set a port (for example 1337) only to reach it from other devices."
